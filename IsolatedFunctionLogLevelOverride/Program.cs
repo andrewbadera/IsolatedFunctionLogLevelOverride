@@ -35,8 +35,6 @@ var host = new HostBuilder()
         var logLevel = Enum.Parse<LogLevel>(logLevelString);
 
         logging.SetMinimumLevel(logLevel);
-
-        logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
     })
     .Build();
 
